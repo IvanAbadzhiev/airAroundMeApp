@@ -57,7 +57,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
+    .state('app.survey',{
+      url: '/survey',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/survey.html',
+          controller: 'SurveyCtrl'
+        }
+      }
+    })
 
   .state('app.single', {
     url: '/playlists/:playlistId',
