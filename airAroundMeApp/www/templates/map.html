@@ -1,6 +1,9 @@
 <ion-view view-title="Map">
   <ion-content>   
-	<ng-map center="[{{coords}}]"></ng-map>
+	<ng-map center="[{{coords}}]">
+    <marker on-click="getData()" position="[{{coords}}]" title="hello"></marker>
+    
+  </ng-map>
 	
 	<div class="button-bar bar-light">
   		<a class="button">First</a>

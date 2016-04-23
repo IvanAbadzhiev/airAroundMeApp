@@ -47,6 +47,10 @@ angular.module('starter.controllers', [])
     $scope.city = response.city; /* Get city */
   }, "jsonp");
 
+  $scope.getData = function(e){
+    alert("click");
+  }
+
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
