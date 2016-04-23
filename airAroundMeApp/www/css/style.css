@@ -34,6 +34,13 @@ select {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-.override {
+.select-override {
 	display: block;
+}
+.bar-override {
+	position: relative;
+}
+
+.button.button-full {
+	margin: 0;
 }
