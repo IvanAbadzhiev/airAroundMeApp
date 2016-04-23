@@ -1,5 +1,27 @@
 <ion-view view-title="Survey">
   <ion-content>
-    <h1>Survey</h1>
+    <ion-list>
+    	<div class="bar bar-header bar-dark">
+  			<h1 class="title">How satisfied are you with the quality of air in this city?</h1>
+		</div>
+  		<ion-radio name="set1" ng-model="choice" ng-value="'A'">Very Satisfied</ion-radio>
+  		<ion-radio name="set1" ng-model="choice" ng-value="'B'">Somewhat Satisfied</ion-radio>
+  		<ion-radio name="set1" ng-model="choice" ng-value="'B'">Neutral</ion-radio>
+  		<ion-radio name="set1" ng-model="choice" ng-value="'B'">Somewhat Dissatisfied</ion-radio>
+  		<ion-radio name="set1" ng-model="choice" ng-value="'B'">Very Dissatisfied</ion-radio>
+  		<ion-radio name="set1" ng-model="choice" ng-value="'B'">Not Sure</ion-radio>
+	</ion-list>
+
+	<ion-list>
+		<div class="bar bar-header bar-dark">
+  			<h1 class="title">How do you find quality and the accessibility of drinking water?</h1>
+		</div>
+  		<ion-radio name="set2" ng-model="choice2" ng-value="'A'">Very Good</ion-radio>
+  		<ion-radio name="set2" ng-model="choice2" ng-value="'B'">Good</ion-radio>
+  		<ion-radio name="set2" ng-model="choice2" ng-value="'B'">Acceptable</ion-radio>
+  		<ion-radio name="set2" ng-model="choice2" ng-value="'B'">Poor</ion-radio>
+  		<ion-radio name="set2" ng-model="choice2" ng-value="'B'">Very Poor</ion-radio>
+  		<ion-radio name="set2" ng-model="choice2" ng-value="'B'">Not Sure</ion-radio>
+	</ion-list>
   </ion-content>
 </ion-view>
