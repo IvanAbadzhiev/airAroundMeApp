@@ -57,8 +57,9 @@ angular.module('starter.controllers', [])
   ];
 
   navigator.geolocation.getCurrentPosition(function(pos) {
-      var lat = pos.coords.latitude
-      var long = pos.coords.longitude
+      var lat = pos.coords.latitude;
+      var long = pos.coords.longitude;
+      $scope.coords = lat + ',' + long;
   })
 })
 .controller('PlaylistCtrl', function($scope, $stateParams) {
