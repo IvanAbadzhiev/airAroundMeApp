@@ -47,6 +47,10 @@ angular.module('starter.controllers', [])
     $scope.city = response.city; /* Get city */
   }, "jsonp");
 
+  $scope.getData = function(e){
+    alert("click");
+  }
+
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
@@ -57,8 +61,9 @@ angular.module('starter.controllers', [])
   ];
 
   navigator.geolocation.getCurrentPosition(function(pos) {
-      var lat = pos.coords.latitude
-      var long = pos.coords.longitude
+      var lat = pos.coords.latitude;
+      var long = pos.coords.longitude;
+      $scope.coords = lat + ',' + long;
   })
 })
 .controller('PlaylistCtrl', function($scope, $stateParams) {
