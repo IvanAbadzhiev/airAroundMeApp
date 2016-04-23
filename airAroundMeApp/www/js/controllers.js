@@ -50,8 +50,12 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
-})
 
+  navigator.geolocation.getCurrentPosition(function(pos) {
+      var lat = pos.coords.latitude
+      var long = pos.coords.longitude
+  })
+})
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
