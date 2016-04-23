@@ -56,5 +56,5 @@ angular.module('starter.controllers', [])
 })
 
 .controller("SurveyCtrl",function($scope){
-  
+
 });
