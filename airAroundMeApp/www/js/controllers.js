@@ -42,6 +42,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('MapCtrl', function($scope) {
+  
+  $.get("http://ipinfo.io", function(response) {
+    $scope.city = response.city;
+  }, "jsonp");
+
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
