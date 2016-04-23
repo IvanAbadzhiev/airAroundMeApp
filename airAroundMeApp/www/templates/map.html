@@ -1,9 +1,19 @@
 <ion-view view-title="Map">
-  <ion-content>   
-	<ng-map center="[{{coords}}]">
-    <marker on-click="getData()" position="[{{coords}}]" title="hello"></marker>
-    
-  </ng-map>
+  <ion-content>
+	<div class="list">
+  		<label class="item item-input">
+    		<div class="input-label override">
+      			Lightsaber
+    		</div>
+    		<select>
+      			<option>Blue</option>
+      			<option>Green</option>
+      			<option>Red</option>
+    		</select>
+  		</label>
+	</div>
+
+	<ng-map center="[42.13541, 24.74529]"></ng-map>
 	
 	<div class="button-bar bar-light">
   		<a class="button">First</a>
