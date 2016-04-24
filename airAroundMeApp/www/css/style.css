@@ -14,3 +14,11 @@
 .list {
 	margin-bottom: 0px;
 }
+
+.bar-override {
+	position: relative;
+}
+
+.button.button-full {
+	margin: 0;
+}

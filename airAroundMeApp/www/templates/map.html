@@ -1,6 +1,18 @@
 <ion-view view-title="Map">
   <ion-content>
-  <ion-content>   
+	<div class="list">
+  		<label class="item item-input item-select">
+    		<div class="input-label">
+      			Lightsaber
+    		</div>
+    		<select>
+      			<option>Blue</option>
+      			<option>Green</option>
+      			<option>Red</option>
+    		</select>
+  		</label>
+	</div>
+
 	<ng-map center="[42.13541, 24.74529]"></ng-map>
 	
 	<div class="button-bar bar-light">
@@ -8,5 +20,13 @@
   		<a class="button">Second</a>
   		<a class="button">Third</a>
 	</div>
+
+	<div class="bar bar-light bar-override">
+  		<h1 class="title">Do you live in {{city}}? We need your help!</h1>
+	</div>
+
+	<a href="#/app/survey" class="button button-positive button-full">Help us</a>
+
+  
   </ion-content>
 </ion-view>
