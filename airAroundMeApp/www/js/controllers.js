@@ -43,7 +43,7 @@ angular.module('starter.controllers', [])
 
 .controller('MapCtrl', function($scope) {
   
-  $.get("http://ipinfo.io", function(response) {
+  $.get("https://ipinfo.io", function(response) {
     $scope.city = response.city; /* Get city */
   }, "jsonp");
 
