@@ -12,8 +12,14 @@
     		</select>
   		</label>
 	</div>
-
-	<ng-map center="[42.13541, 24.74529]"></ng-map>
+  <!-- <div ng-repeat="marker in markers"> {{marker.icon}}</div> -->
+	<ng-map center="[42.13541, 24.74529]">
+    <marker ng-repeat="marker in markers" position="{{marker.lat}}, {{marker.lng}}" title="Hello World!"
+      optimized="false"
+      icon="{
+        url: 'img/{{marker.icon}}.png'
+      }"></marker>
+  </ng-map>
 	
 	<div class="button-bar bar-light">
   		<a class="button">First</a>

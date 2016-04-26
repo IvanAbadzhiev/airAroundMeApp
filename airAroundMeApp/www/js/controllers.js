@@ -41,8 +41,20 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('MapCtrl', function($scope) {
-  
+.controller('MapCtrl', function($scope,$http) {
+  $.ajax({
+    type:'get',
+    url:'json/markers.json',
+    success:function(data){
+      $scope.markers = data;
+      console.log($scope.markers);
+    },
+    error: function (xhr, ajaxOptions, thrownError) {
+      //alert(xhr.status);
+      //alert(thrownError);
+    }
+  })
+
   $.get("http://ipinfo.io", function(response) {
     $scope.city = response.city; /* Get city */
   }, "jsonp");
